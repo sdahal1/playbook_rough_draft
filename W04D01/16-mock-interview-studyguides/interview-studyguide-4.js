@@ -1,4 +1,3 @@
-const axios = require('axios');
 /* 
 Using an api endpoint like this: https://pokeapi.co/api/v2/pokemon/ditto
 
@@ -29,19 +28,7 @@ bulbasaur
 
 
 function catchEmAll(pokemonName) {
-  return axios
-      .get(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`)
-      .then((response) => {
-          return {
-              name: response.data.name,
-              abilities: response.data.abilities,
-              height: response.data.height,
-              base_experience: response.data.base_experience,
-          };
-      })
-      .catch((error) => {
-          return error.message;
-      });
+  
 }
 
 catchEmAll("pikachu")

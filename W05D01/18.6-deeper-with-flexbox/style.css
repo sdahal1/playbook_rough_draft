@@ -1,0 +1,12 @@
+.group{
+  background-color: rgb(181, 211, 217);
+  border: 2px solid black;
+  /* how  would i create cushion inside this container?*/
+  /* how would i make this a flex container? */
+}
+
+.item{
+  border: 2px solid red;
+}
+
+
