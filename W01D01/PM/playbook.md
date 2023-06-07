@@ -13,6 +13,7 @@
   - Gitbash on windows
   - Mac comes with linux commands
   - If you use linux, you're probably already nice at coding lol
+  
 - LIVE CODE TIME: Go over lecture starter code: CommandLine.txt file
 
 

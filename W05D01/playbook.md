@@ -50,4 +50,7 @@
   - You can show them the wireframe for the coffee site and compare with the layout for the pet site to make the pet site similar layout
 
 ### 18.6 - Deeper with flexbox
-  - 
+  - Use the 18.6-deeper-with-flexbox and show example of each flexbox property
+
+
+  
