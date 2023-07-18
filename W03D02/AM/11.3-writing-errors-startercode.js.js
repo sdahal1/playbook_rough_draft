@@ -14,25 +14,24 @@ Security: Throwing errors can help prevent security vulnerabilities by identifyi
 
 */
 
+//BASIC EXAMPLE:
 
-//BASIC EXAMPLE: 
-
-let secret = 42;
-let guess = 55;
-
-if (guess !== secret) {
+function validateGuess(guess) {
+  const secret = 8
+  if (guess !== secret) {
     //YOU CAN THROW NEW ERROR USING THE BUILT IN ERROR CLASS
-    throw new Error("That is not the secret number!")
+    throw new Error("That is not the secret number!");
 
     //YOU CAN ALSO THROW ANY DATA TYPE YOU WANT
     // throw {name:"That's not the secret number!", code: 'aintNoSecret', message: "New app who dis."};
     // throw 10;
     // throw "oh nah"
+  }
 }
 
+// validateGuess(5, 8);
 
 //YOU CAN ALSO S
-
 
 //EXAMPLE OF BACKTRACE- WHEN MULTIPLE FUNCTIONS ARE INVOLVED AND WERE NOT ABLE TO COMPLETE BECAUSE OF AN ERROR
 
@@ -47,43 +46,34 @@ if (guess !== secret) {
 // }
 // one();
 
-
-
-
 /* ASSESSMENT STUDY GUIDE! */
 
 //Throwing an array of errors
-function findPlayerAveragePoints(players={}, name){
-    //if player name is not in the players object, have an error pushed to an array
-
-    //if player has not played any games, have an error pushed to an array
-
-    //if player has played in less than 2 games, have an error pushed to an array
-
-
-    //if there are any errors in our array, then throw all the errors 
-
-    //if there are no errors in our array, return the player Average points
-
+function findPlayerAveragePoints(players = {}, name) {
+  //if player name is not in the players object, have an error pushed to an array
+  //if player has not played any games, have an error pushed to an array
+  //if player has played in less than 2 games, have an error pushed to an array
+  //if there are any errors in our array, then throw all the errors
+  //if there are no errors in our array, return the player Average points
 }
 
 let players = {
-    "Lebron": {
-        points: [30,22,32,26],
-        team: "Lakers"
-    },
-    "Jordan": {
-        points: [36,30,30,34],
-        team: "Bulls"
-    },
-    "Rob": {
-        points: [],
-        team: "JavaScript-ers"
-    },
-    "Curry": {
-        points: [50,100],
-        team: "Warriors"
-    }
-}
+  Lebron: {
+    points: [30, 22, 32, 26],
+    team: "Lakers",
+  },
+  Jordan: {
+    points: [36, 30, 30, 34],
+    team: "Bulls",
+  },
+  Rob: {
+    points: [],
+    team: "JavaScript-ers",
+  },
+  Curry: {
+    points: [50, 100],
+    team: "Warriors",
+  },
+};
 
-console.log(findPlayerAveragePoints(players, "Lebron"))
+console.log(findPlayerAveragePoints(players, "Lebron"));
